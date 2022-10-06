@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteMetaGrouping">
+	<test thread-count="5" name="TestMetaGrouping">
+		<groups>
+			<define name="Hanmant">
+				<include name="A"></include>
+				<include name="D"></include>
+			</define>
+			<define name="Hanmant 1">
+				<include name="B"></include>
+				<!-- <exclude name ="C"></exclude> -->
+			</define>
+			<run>
+				<include name="Hanmant 1"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="Velocity_Chinchwad.Dec_11_Evening.GroupingClass" />
+			<class name="Velocity_Chinchwad.Dec_11_Evening.Grouping_2" />
+			<class name="groupingPractice.Grouping_3" />
+		</classes>
+	</test> <!-- TestMetaGrouping -->
+</suite> <!-- SuiteMetaGrouping -->

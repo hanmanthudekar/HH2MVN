@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteTestSuitGropuPractice]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestTestSuitGropuPractice(failed)">
+    <classes>
+      <class name="groupU_Mock.AmazonTest">
+        <methods>
+          <include name="launchBrowsers"/>
+          <include name="searchProduct"/>
+          <include name="selectProduct"/>
+          <include name="verifyCartButton"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- groupU_Mock.AmazonTest -->
+    </classes>
+  </test> <!-- TestTestSuitGropuPractice(failed) -->
+</suite> <!-- Failed suite [SuiteTestSuitGropuPractice] -->

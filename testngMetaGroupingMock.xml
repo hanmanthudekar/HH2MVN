@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteMetaGroupingMock">
+	<test thread-count="5" name="TestMetaGroupingMock">
+		<groups>
+			<define name="Pratik">
+				<include name="A"></include>
+				<include name="B"></include>
+			</define>
+			<define name="Gopal">
+				<include name="C"></include>
+				<include name="D"></include>
+			</define>
+			<run>
+				<!-- <include name="Gopal"></include> -->
+				<include name="Pratik"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="groupingPractice.GroupingClass" />
+			<class name="groupingPractice.Grouping_2" />
+			<class name="groupingPractice.Grouping_3" />
+		</classes>
+	</test> <!-- TestMetaGroupingMock -->
+</suite> <!-- SuiteMetaGroupingMock -->

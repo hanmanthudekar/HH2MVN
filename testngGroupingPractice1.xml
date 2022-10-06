@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteGroupingPractice1">
+	<test thread-count="5" name="TestGroupingPractice1">
+		<groups>
+			<define name="Prathmesh">
+				<include name="A"></include>
+				<include name="B"></include>
+			</define>
+			<run>
+				<include name="Prathmesh"></include>
+				<exclude name="C"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="groupU_Mock.Grouping_3" />
+		</classes>
+	</test> <!-- TestGroupingPractice1 -->
+</suite> <!-- SuiteGroupingPractice1 -->
